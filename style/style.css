@@ -16,7 +16,7 @@ h2 {
     text-decoration: underline;
 }
 
-p, ul{
+p, ul, table{
     font-family: cursive;
 }
 
@@ -63,11 +63,8 @@ button:hover{
 }
 
 #footer{
-    text-align: right;
+    text-align: center;
     font-size: 16px;
     font-family: monospace;
-}
-
-.text {
     background-color: #5b8a72;
 }
