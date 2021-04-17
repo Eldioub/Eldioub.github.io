@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Titillium+Web:wght@200&family=Zen+Dots&display=swap');
+
 body{
     background-color: hsl(81, 25%, 73%);
     margin:  0 50px;
@@ -46,15 +48,17 @@ h2 {
 }
 
 p, ul, table{
-    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 18px;
 }
 
 #contact{
     background-color: #5b8a72;
-    font-family: 'Courier New';
 }
 
 #contact h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
@@ -68,8 +72,8 @@ p, ul, table{
     background-color: #364547;
     color: #fff;
     border: 0;
-    font-family: monospace;
     outline: none;
+    font-weight: bold;
 }
 
 #contact input:focus, textarea:focus{
@@ -90,8 +94,9 @@ button{
     border: paleturquoise solid 1px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-75%);
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 button:hover{
@@ -104,4 +109,6 @@ button:hover{
     font-size: 16px;
     background-color: #5b8a72;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
