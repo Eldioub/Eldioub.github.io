@@ -15,16 +15,28 @@ body{
 }
 
 .col1{
-    width: 180px;
+    width: 5%;
     text-align: center;
     border: #2f5d62 2px dotted;
     padding: 15px;
+    margin: 0;
 }
 
 .col2{
-    width: 1080px;
+    width: 30%;
     border: #2f5d62 2px dotted;
     padding: 15px;
+    margin: 0;
+}
+
+.col3{
+    width: 1%;
+    margin: 0;
+}
+
+.col4{
+    width: 30%;
+    margin: 0;
 }
 
 h2 {
@@ -50,12 +62,14 @@ p, ul, table{
 }
 
 #contact input, textarea{
-    padding: 8px;
+    width:  90%;
+    padding: 15px 20px;
+    margin: 3px 20px;
     background-color: #364547;
     color: #fff;
-    border: none;
+    border: 0;
     font-family: monospace;
-    width: 1048px;
+    outline: none;
 }
 
 #contact input:focus, textarea:focus{
@@ -64,11 +78,7 @@ p, ul, table{
 
 #contact textarea{
     resize: none;
-    height: 130px;
-}
-
-#contact input{
-    height: 16px;
+    height: 120px;
 }
 
 button{
@@ -89,30 +99,9 @@ button:hover{
     background-color: #ffb037;
 }
 
-#footer p{
+#footer{
     text-align: center;
     font-size: 16px;
     background-color: #5b8a72;
-    margin: 12px 430px;
-}
-@media (min-width: 501px) and (max-width: 1024px) {
-    #contact input, textarea{
-        width: 501px;
-    }
-    
-    #footer p{
-        margin: 5px 0;
-    }
-}
-@media (max-width: 500px) {
-    #contact input, textarea{
-        width: 100%;
-    }
-    body{
-        margin: 0;
-        width: 100%;
-    }
-    #footer p{
-        margin: 5px 0;
-    }
+    margin-bottom: 10px;
 }
