@@ -70,7 +70,7 @@ section .img{
     left: 0;
     top: 0;
     object-fit: cover;
-    user-select: none;
+    -webkit-user-drag: none; 
 }
 .text{
     position: absolute;
