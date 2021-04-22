@@ -1,0 +1,80 @@
+/*Pour Mettre Tous les carrées en meme ligne*/
+.container{
+    position: relative;
+}
+.F1{
+    position: absolute;
+    left: 0;
+}
+.F2{
+    position: absolute;
+    left: 14rem;
+}
+.F3{
+    position: absolute;
+    left: 40rem;
+}
+.F4{
+    position: absolute;
+    left: 60rem;
+}
+
+/*La taille des carrées et les coleurs*/
+.carre1{
+    background-color: #dd9694;
+    width: 100px;
+    height: 100px;
+}
+.carre2{
+    background-color: #c4bd97;
+    width: 100px;
+    height: 100px;
+}
+.carre3{
+    background-color: #558ed5;
+    height: 100px;
+    width: 100px;
+}
+
+/*Traitement sur chaque figures*/
+.F1 *{
+    margin-bottom: 5px;
+}
+.F2 .carre2{
+    position: absolute;
+    left: 100px;
+}
+.F2 .carre3{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.F3 .carre1{
+    width: 202px;
+}
+.F3 .carre2{
+    margin-top: 2px;
+}
+.F3 .carre3{
+    position: absolute;
+    left: 102px;
+    top:  102px;
+}
+.F4 .carre2{
+    margin-top: 2px;
+}
+.F4 .carre3{
+    position: absolute;
+    left: 102px;
+    top: 0;
+}
+.F4 p,.F3 p,.F2 p{
+    position: absolute;
+    top: 310px;
+}
+p{
+    font-size: 16px;
+    font-family: fantasy;
+    color: #478adb;
+    text-align: center;
+}
