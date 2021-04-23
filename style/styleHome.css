@@ -143,6 +143,6 @@ section .img{
         font-size: 1.9em;
     }
     .col3{
-    visibility: visible;
+       visibility: hidden;
     }
 }
