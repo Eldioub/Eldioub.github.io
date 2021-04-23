@@ -145,8 +145,10 @@ section .img{
     .col3{
        visibility: hidden;
     }
-	.container{
-    padding: 80px;
-}
-
+    .container{
+       padding: 20px 30px;
+    }
+    header{
+	padding: 20px 30px;
+    }
 }
