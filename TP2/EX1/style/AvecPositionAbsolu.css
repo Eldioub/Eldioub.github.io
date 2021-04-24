@@ -38,7 +38,7 @@
 
 /*Traitement sur chaque figures*/
 .F1 *{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .F2 .carre2{
     position: absolute;
@@ -70,7 +70,7 @@
 }
 .F4 p,.F3 p,.F2 p{
     position: absolute;
-    top: 310px;
+    top: 308px;
 }
 p{
     font-size: 16px;
