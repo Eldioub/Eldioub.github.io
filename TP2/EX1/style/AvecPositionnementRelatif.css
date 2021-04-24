@@ -70,5 +70,15 @@ p{
     font-size: 16px;
     font-family: fantasy;
     color: #478adb;
-    text-align: center;
+}
+/*Pour mettre les p en meme ligne*/
+.F2 p {
+    position: relative;
+    top: 4px;
+    left: 50%;
+}
+.F3 p, .F4 p{
+    position: relative;
+    top: 2px;
+    left: 50%;
 }
