@@ -40,6 +40,9 @@
 .F1 *{
     margin-bottom: 2px;
 }
+.F1 p{
+    position: absolute;
+}
 .F2 .carre2{
     position: absolute;
     left: 100px;
