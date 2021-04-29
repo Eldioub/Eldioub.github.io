@@ -142,8 +142,9 @@ section .img{
     .container h2{
         font-size: 1.9em;
     }
-    .col3{
-       visibility: hidden;
+    .col3,
+    header ul li a{
+       display: hidden;
     }
     .container{
        padding: 20px 30px;
