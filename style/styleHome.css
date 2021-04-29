@@ -144,7 +144,7 @@ section .img{
     }
     .col3,
     header ul li a{
-       display: hidden;
+       display: none;
     }
     .container{
        padding: 20px 30px;
