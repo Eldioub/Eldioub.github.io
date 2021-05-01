@@ -13,7 +13,7 @@ body{
 .header{
     height: 100vh;
     width: 100%;
-    background-image: url('img/Moon.jpg');
+    background-image: url('../img/Moon.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
