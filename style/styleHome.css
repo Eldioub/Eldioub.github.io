@@ -146,7 +146,7 @@ section .img{
     text-decoration: underline;
     opacity: 1;
 }
-@media (max-width: 500px){
+@media (max-width: 560px){
     .container h2{
         font-size: 1.9em;
     }
