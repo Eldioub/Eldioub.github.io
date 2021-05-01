@@ -162,16 +162,16 @@ section .img{
     }
     header img{
     	display: block;
-        height: 60px; 
-	width: 60px;
+        height: 55px; 
+	width: 55px;
         position: absolute; 
 	right: 5px;
-	top: 6px;
+	top: 8px;
 	filter: brightness(0.8);
     }
     .text,
     .text2{
-        font-size: 8vw;
+        font-size: 7.5vw;
 	}
     .btn{
 	font-size: 17px;
