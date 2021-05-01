@@ -20,7 +20,7 @@ header{
     text-align: center;
     z-index: 2;
 }
-header .imgMenu{
+header img{
     display: none;
 }
 header .logo{
@@ -160,7 +160,7 @@ section .img{
     header{
 	padding: 20px 30px;
     }
-    header .imgMenu{
+    header img{
     	display: block;
         height: 60px; 
 	width: 60px;
@@ -169,4 +169,11 @@ section .img{
 	top: 6px;
 	filter: brightness(0.8);
     }
+    .text,
+    .text2{
+        font-size: 8vw;
+	}
+    .btn{
+	font-size: 17px;
+	}
 }
