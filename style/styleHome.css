@@ -20,6 +20,9 @@ header{
     text-align: center;
     z-index: 2;
 }
+header .imgMenu{
+    display: none;
+}
 header .logo{
     color: #fff;
     font-weight: 800;
@@ -156,5 +159,14 @@ section .img{
     }
     header{
 	padding: 20px 30px;
+    }
+    header .imgMenu{
+    	display: block;
+        height: 60px; 
+	width: 60px;
+        position: absolute; 
+	right: 5px;
+	top: 6px;
+	filter: brightness(0.8);
     }
 }
