@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bistro | Order Now</title>
+<title>Order Now</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bistro-icons.css">
@@ -51,34 +51,40 @@
   <div id="navigation" data-spy="affix" data-offset-top="20">
     <div class="container">
       <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar-default">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-collapse-navbar" aria-expanded="false"> 
-            <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> 
-            </button>
-            <a class="navbar-brand logo-center" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
-         </div>
-        
+        <div class="col-md-12">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#fixed-collapse-navbar" aria-expanded="false">
+                <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span
+                  class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand logo-center" href="index.html"><img src="images/logo.png" alt="logo"
+                  class="img-responsive"></a>
+            </div>
+
             <div id="fixed-collapse-navbar" class="navbar-collapse collapse">
-              
+
               <div class="navbar-left-1">
-              <ul class="nav navbar-nav  navbar-left">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cooker.html">Cooker</a></li>
-                </ul> 
-                </div>
-                <div class="navbar-right-1">
-                <ul class="nav navbar-nav  navbar-right"> 
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order Now</a></li>
-              </ul>
+                <ul class="nav navbar-nav  navbar-left">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cooker.html">Cooker</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+
+                </ul>
+              </div>
+              <div class="navbar-right-1">
+                <ul class="nav navbar-nav  navbar-right">
+                  <li><a href="contactus.html">Contact US</a></li>
+                  <li><a href="login.html">Login/Sign up</a></li>
+                  <li><a href="order.html">Order Now</a></li>
+                </ul>
               </div>
             </div>
-         </nav>
-         </div>
-       </div>
-     </div>
+          </nav>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 <!--Page header & Title-->
@@ -143,18 +149,12 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                   <select class="form-control" id="delay" name="delay" style="display: none;">
-                       <option> Select the time to take your command </option>
-                       <option> 20 min </option>
-                       <option> 40 min </option>
-                       <option> 60 min </option>
-                       <option> 80 min </option>
-                    </select>
+                    <input type="text" class="form-control" placeholder="Your coupon"  name="coupon" id="coupon">
                   </div>
                 </div>
-                <div class="col-md-6" id="address">
+                <div class="col-md-6" id="typeDelivery">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Address"  name="address_text" id="address_text" style="display: none;">
+                   
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -264,23 +264,38 @@
 
   document.getElementById("btn_order_submit").addEventListener("click", _ => {
     let form = document.getElementById("order_form");
-    let add = document.getElementById('address_text').value;
-    if(add === ''){
+    let add = document.getElementById('delivery').value;
+    if(add !== 'home'){
       form.setAttribute('action', 'order_complet.html');
     }
     
   });
 
+  let sel = document.createElement('select');
+  sel.classList.add("form-control");
+  [" Select the time to take your command "," 20 min ",  " 40 min ", " 60 min ", " 80 min "]
+  .forEach( x => {
+    let opt = document.createElement('option');
+    opt.textContent = x;
+    sel.add(opt);
+  });
+
+  let inpt = document.createElement('input');
+  inpt.setAttribute('type', "text");
+  inpt.classList.add('form-control');
+  inpt.setAttribute('placeholder', "Your Address");
+  inpt.setAttribute('name', "address_text");
+  inpt.setAttribute('id', "address_text");
+
   let delivery = document.getElementById('delivery');
+  let typeDelivery = document.getElementById('typeDelivery');
   delivery.addEventListener('change', e => {
-    let address = document.getElementById('address_text');
-    let delay = document.getElementById('delay');
     if(e.target.value == 'home'){
-      address.style.display = 'flex';
-      delay.style.display = 'none'
+      typeDelivery.innerHTML = '';
+      typeDelivery.append(inpt);
     } else if(e.target.value == 'cooker_home') {
-      delay.style.display = 'flex';
-      address.style.display = 'none';
+      typeDelivery.innerHTML = '';
+      typeDelivery.append(sel);
     }
   });
 
