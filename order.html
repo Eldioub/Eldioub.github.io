@@ -138,9 +138,9 @@
                     <input type="text" class="form-control" placeholder="Phone No" name="phone" id="phone" required>
                   </div>
                 </div>
-                <div class="col-md-6" id="delivery">
+                <div class="col-md-6">
                   <div class="form-group">
-                    <select class="form-control" id="deal">
+                    <select class="form-control" id="delivery">
                         <option> Select your delivery method </option>
                         <option value="home"> to your address </option>
                         <option value="cooker_home"> at the cooker address </option>
@@ -264,8 +264,8 @@
 
   document.getElementById("btn_order_submit").addEventListener("click", _ => {
     let form = document.getElementById("order_form");
-    let add = document.getElementById('delivery').value;
-    if(add !== 'home'){
+    let action = document.getElementById('delivery').value;
+    if(action !== 'home'){
       form.setAttribute('action', 'order_complet.html');
     }
     
